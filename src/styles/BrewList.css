@@ -4,6 +4,10 @@
 }
 
 .cbt-brew_list li {
-    text-decoration: none; 
     list-style: none; 
+}
+
+.cbt-brew_list a {
+    text-decoration: none; 
+    color: #000; 
 }
