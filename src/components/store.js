@@ -11,6 +11,7 @@ export default {
         {
             "id": 2, 
             "name": "5 Rabbit Cerveceria",
+            "image": require('../img/lagrow.png'),
             "address": "6398 74th St, Bedford Park, IL 60638",
             "phone_number": "(312) 895-9591",
             "details": "5 Rabbit is the first US based Latin American-inspired brewery. We hope to bring the energy, passion and amazing richness of Latin culture and cuisine to the delicious world of craft beer.",

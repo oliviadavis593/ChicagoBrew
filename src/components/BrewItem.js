@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/BrewItem.css';
 
 
 class BrewItem extends Component {
@@ -9,7 +10,7 @@ class BrewItem extends Component {
         return(
             <div className='brew-item'>
                 <div className='brew-image'>
-                    {image}
+                    <img src={image} />
                 </div>
                 <div>
                   <Link to={`/brews/${id}`}>

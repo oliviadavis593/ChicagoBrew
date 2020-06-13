@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import STORE from '../components/store';
 
 
@@ -25,6 +26,11 @@ class BrewPage extends Component {
                 <details closed='true'>
                     {brew.details}
                 </details>
+             </div>
+             <div className='cbt-add-brew-item'>
+                <Link to='/mybrews'>
+                    <button>Add to list</button>
+                </Link>
              </div>
          </section>   
         )
