@@ -19,6 +19,7 @@ export default {
         {
             "id": 3,
             "name": "350 Brewing Company",
+            "image": '',
             "address": "7144 183rd St, Tinley Park, IL 60477",
             "phone_number": "(708) 468-8991",
             "details": "Neighborhood brewpub supplying housemade beers along with a light fare menu in industrial-chic digs.",
