@@ -1,14 +1,20 @@
 .brew-item {
     --item-height: 60px;
-    background-color: #eee;
+    background-color: #df4811;
     padding: 8px 0px 8px 8px; 
     margin: 0 20px 15px -20px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4); 
+    border-radius: 10px; 
     width: 250px; 
     margin: 30px auto; 
+    font-size: 22px; 
 }
 
 .brew-image img{
     width: 100px;
     margin: 0 auto;  
+}
+
+.gbt-item__brew_name {
+    color: #fff; 
 }

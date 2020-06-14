@@ -1,15 +1,25 @@
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Metal Mania', cursive;
+     background-color: #4b6584;
+     color: #fff; 
 }
 
 .landing-main {
     margin-top: 100px; 
     margin: 100px auto; 
     width: 250px; 
+    font-size: 30px; 
 }
 
 .landing-start {
     margin-top: 100px; 
+    width: 250px;
+    margin: 0 auto; 
+    font-size: 25px; 
+}
+
+.landing-start p {
+    color: #df4811;
 }
 
 .landing-btn {
