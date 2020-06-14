@@ -7,3 +7,8 @@
     width: 250px; 
     margin: 30px auto; 
 }
+
+.brew-image img{
+    width: 100px;
+    margin: 0 auto;  
+}

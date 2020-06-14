@@ -6,7 +6,6 @@ import '../styles/BrewItem.css';
 class BrewItem extends Component {
     render() {
         const { image, name, id } = this.props; 
-
         return(
             <div className='brew-item'>
                 <div className='brew-image'>
@@ -18,9 +17,6 @@ class BrewItem extends Component {
                         {name}
                     </p>
                   </Link>
-                </div>
-                <div>
-
                 </div>
             </div>
         )

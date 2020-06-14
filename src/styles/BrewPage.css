@@ -1,0 +1,27 @@
+summary {
+    outline: none; 
+}
+
+.cbt-brew-page__container {
+    border: 1px solid #000; 
+    width: 300px; 
+    margin: 0 auto; 
+}
+
+.cbt-brew-info__container {
+    width: 250px; 
+    margin: 0 auto; 
+}
+
+.cbt-brew_phone-number,
+.cbt-brew_address,
+.cbt-brew_website,
+.cbt-brew_details {
+    margin-top: 40px; 
+}
+
+
+.cbt-add-brew-item {
+    margin-top: 40px;
+    margin-bottom: 40px;  
+}
