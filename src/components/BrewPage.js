@@ -8,7 +8,7 @@ import '../styles/BrewPage.css';
 class BrewPage extends Component {
 
     render() {
-
+        //display info from specific brew 
         const { brew_id } = this.props.match.params; 
         const brew = STORE.brews.find(brew => brew.id === parseInt(brew_id, 10));
         console.log("brew_id", brew_id);
@@ -26,13 +26,21 @@ class BrewPage extends Component {
                     
                  </div>
                 <div className='cbt-brew_phone-number'>
-                   Phone: {brew.phone_number}
+                    <span>
+                        Phone:
+                        <br />
+                    </span>
+                   {brew.phone_number}
                 </div>
                 <div className='cbt-brew_address'>
-                   Address: {brew.address}
+                    <span>
+                        Address:
+                        <br />
+                    </span>
+                   {brew.address}
                 </div>
                 <div className='cbt-brew_website'>
-                   Website: <a href={brew.website} target='blank'>{brew.website}</a>
+                   <a href={brew.website} target='blank'>Website</a>
                 </div>
                 <details closed='true' className='cbt-brew_details'>
                         <summary>
@@ -43,7 +51,9 @@ class BrewPage extends Component {
              </div>
              <div className='cbt-add-brew-item'>
                 <Link to='/mybrews'>
-                    <button>Add to list</button>
+                    <button type='submit' className='cbt-add-button'>
+                        Add to list
+                    </button>
                 </Link>
              </div>
          </section>  

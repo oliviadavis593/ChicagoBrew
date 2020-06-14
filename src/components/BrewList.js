@@ -9,6 +9,7 @@ class BrewList extends Component {
         return(
             <section className='cbt-brew-list__container'>
                 <ul className='cbt-brew_list'>
+                    {/*Map through the store file to get the entire list of breweries */}
                   {STORE.brews.map(brew => (
                       <li key={brew.id}>
                           <BrewItem

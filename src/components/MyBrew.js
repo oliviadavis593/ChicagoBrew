@@ -5,8 +5,10 @@ class MyBrew extends Component {
     render() {
         return(
             <div>
-                <Navigation />
-                Hello MyBrew!
+                <div>
+                    <Navigation />
+                </div>
+                Hello, world!
             </div>
         )
     }
