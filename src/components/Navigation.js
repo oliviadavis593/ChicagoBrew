@@ -9,7 +9,7 @@ function Navigation() {
             <div className='cbt-logo'>
                 <Link to='/'>
                     <span>
-                        Chicago Brew Tab
+                        Chicago Brew 
                     </span>
                 </Link>
             </div>

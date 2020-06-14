@@ -13,7 +13,7 @@ function Landing() {
             <div className='landing-main'>
                 <p>
                     There's over 167 breweries in the Chicago Area. Chicago
-                    Brew Tab allows you to find your favorite breweries and 
+                    Brew allows you to find your favorite breweries and 
                     drink your way through town.
                 </p>
             </div>
@@ -21,7 +21,8 @@ function Landing() {
                   <h2>How to get started...</h2>
                   <p>1. Simply view the Chicago brewery list.</p>
                   <p>2. Choose an individual brewery to see the information listed.</p>
-                  <p>3. Visit a brewery and enjoy!</p>  
+                  <p>3. Add that brewery to your list</p>
+                  <p>4. Visit a brewery and enjoy!</p>  
             </div>
             <div className='landing-btn'>
                <Link to='/dashboard' className='enter_button'>
