@@ -50,11 +50,13 @@ class BrewPage extends Component {
                 </details>
              </div>
              <div className='cbt-add-brew-item'>
-                <Link to='/mybrews'>
-                    <button type='submit' className='cbt-add-button'>
+                    <button 
+                    type='submit' 
+                    className='cbt-add-button'
+                    onClick={this.handleAddBrew}
+                    >
                         Add to list
                     </button>
-                </Link>
              </div>
          </section>  
          </div> 

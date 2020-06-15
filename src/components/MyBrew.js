@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
 import Navigation from '../components/Navigation';
+import BrewContext from '../BrewContext';
 
 class MyBrew extends Component {
+
+    static contextType = BrewContext; 
+
     render() {
         return(
-            <div>
+            <section>
                 <div>
                     <Navigation />
                 </div>
-                Hello, world!
-            </div>
+                <div className='brew-list'>
+                    
+                </div>
+            </section>
         )
     }
 }
