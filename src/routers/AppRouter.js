@@ -36,7 +36,7 @@ class AppRouter extends Component {
                         <Switch>
                             <Route path='/dashboard' component={Dashboard} />
                             {/*Note: change back to /brewpage/:brew_id when implenting backend API */}
-                            <Route path='/brew/:brew_id' component={ props => <BrewPage {...props} addBrew={this.handleAddBrew}/>} />
+                            <Route path='/brew/:brew_id' component={BrewPage} />
                             <Route path='/mybrews' component={MyBrew}/>
                         </Switch>
                     </main>

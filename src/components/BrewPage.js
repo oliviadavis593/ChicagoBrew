@@ -2,10 +2,21 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import STORE from '../components/store';
 import Navigation from '../components/Navigation';
+import BrewContext from '../BrewContext';
 import '../styles/BrewPage.css';
 
 
 class BrewPage extends Component {
+
+    handleClick = () => {
+        const { brew_id } = this.props.match.params; 
+        const brew = STORE.brews.find(brew => brew.id === parseInt(brew_id, 10));
+
+        this.context.addBrew(brew)
+        this.props.history.push('/mybrews')
+    }
+
+    static contextType = BrewContext; 
 
     render() {
         //display info from specific brew 
@@ -53,7 +64,7 @@ class BrewPage extends Component {
                     tag={Link}
                     to='/mybrews' 
                     className='cbt-add-button'
-                    onClick={this.props.addBrew}
+                    onClick={this.handleClick}
                     >
                         Add to list
                     </button>
