@@ -14,7 +14,7 @@ class BrewItem extends Component {
                     <img src={image} />
                 </div>
                 <div>
-                  <Link to={`/brews/${id}`}>
+                  <Link to={`/brew/${id}`}>
                     <p className='gbt-item__brew_name'>
                         {name}
                     </p>
