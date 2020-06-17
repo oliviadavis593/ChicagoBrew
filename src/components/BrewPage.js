@@ -11,7 +11,6 @@ class BrewPage extends Component {
         //display info from specific brew 
         const { brew_id } = this.props.match.params; 
         const brew = STORE.brews.find(brew => brew.id === parseInt(brew_id, 10));
-        console.log("brew_id", brew_id);
         return(
          <div>
              <div className='navigation'>
@@ -51,9 +50,10 @@ class BrewPage extends Component {
              </div>
              <div className='cbt-add-brew-item'>
                     <button 
-                    type='submit' 
+                    tag={Link}
+                    to='/mybrews' 
                     className='cbt-add-button'
-                    onClick={this.handleAddBrew}
+                    onClick={this.props.addBrew}
                     >
                         Add to list
                     </button>

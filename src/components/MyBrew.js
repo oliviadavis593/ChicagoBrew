@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import Navigation from '../components/Navigation';
-import BrewContext from '../BrewContext';
+import BrewItem from '../components/BrewItem';
 
 class MyBrew extends Component {
 
-    static contextType = BrewContext; 
 
     render() {
         return(
@@ -12,8 +11,8 @@ class MyBrew extends Component {
                 <div>
                     <Navigation />
                 </div>
-                <div className='brew-list'>
-                    
+                <div>
+                    <BrewItem />
                 </div>
             </section>
         )
