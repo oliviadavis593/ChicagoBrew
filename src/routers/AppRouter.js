@@ -10,10 +10,11 @@ import BrewContext  from '../BrewContext';
 class AppRouter extends Component {
 
     state = {
-        brews: []
+        brews: [],
     }
 
     handleAddBrew = brew => {
+        console.log("brew", brew)
         this.setState({
             brews: [...this.state.brews, brew],
         })
@@ -35,7 +36,7 @@ class AppRouter extends Component {
                         <Switch>
                             <Route path='/dashboard' component={Dashboard} />
                             {/*Note: change back to /brewpage/:brew_id when implenting backend API */}
-                            <Route path='/brews/:brew_id' component={BrewPage} />
+                            <Route path='/brew/:brew_id' component={ props => <BrewPage {...props} addBrew={this.handleAddBrew}/>} />
                             <Route path='/mybrews' component={MyBrew}/>
                         </Switch>
                     </main>

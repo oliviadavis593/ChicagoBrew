@@ -15,7 +15,7 @@ function Navigation() {
             </div>
             <nav className='nav'>       
                 <NavLink to='/dashboard' className='cbt-link__home'>Home</NavLink>
-                <NavLink to='/mybrew' className='cbt-link__mybrew'>My Brew</NavLink>
+                <NavLink to='/mybrews' className='cbt-link__mybrew'>My Brew</NavLink>
             </nav>
         </div>
     )
