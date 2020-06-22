@@ -1,6 +1,6 @@
 .brew-item {
     --item-height: 60px;
-    background-color: #df4811;
+    background-color: #000;
     padding: 8px 0px 8px 8px; 
     margin: 0 20px 15px -20px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4); 
@@ -8,7 +8,11 @@
     width: 250px; 
     margin: 30px auto; 
     font-size: 22px; 
+    display: grid;   
+    transition:  0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    box-shadow: 7px 7px #fff; 
 }
+
 
 .brew-image img{
     width: 120px;
@@ -17,4 +21,9 @@
 
 .gbt-item__brew_name {
     color: #fff; 
+}
+
+.gbt-item__brew_name:hover {
+    color: #ffdfd3; 
+    transition: 0.7s; 
 }

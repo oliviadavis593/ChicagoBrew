@@ -5,12 +5,35 @@ import Dashboard from '../views/Dashboard';
 import BrewPage from '../components/BrewPage';
 import MyBrew from '../components/MyBrew';
 import BrewContext  from '../BrewContext';
+import config from '../config';
 
 
 class AppRouter extends Component {
 
     state = {
         brews: [],
+        error: null, 
+    }
+
+    componentDidMount() {
+        fetch(`${config.API_ENDPOINT}/api/brews`, {
+            method: 'GET',
+            headers: {
+                'content-type': 'application/json'
+            }
+        })
+        .then(res => {
+            if (!res.ok) {
+                throw new Error(res.status)
+            }
+            return res.json()
+        })
+        .then(brews => {
+            this.setState({ brews })
+        })
+        .catch(error => {
+            console.error({ error })
+        })
     }
 
     handleAddBrew = brew => {
@@ -20,10 +43,17 @@ class AppRouter extends Component {
         })
     }
 
+    handleDeleteBrew = brew => {
+        this.setState({
+            brews: [...this.state.brews, brew]
+        })
+    }
+
     render() {
         const contextValue = {
             brews: this.state.brews, 
-            addBrew: this.handleAddBrew
+            addBrew: this.handleAddBrew,
+            deleteBrew: this.handleDeleteBrew
         }
         return(
             <BrewContext.Provider value={contextValue}>

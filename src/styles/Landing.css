@@ -1,7 +1,11 @@
 body {
-    font-family: 'Metal Mania', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
      background-color: #4b6584;
-     color: #fff; 
+     color: #000; 
+}
+
+.cb-logo{
+    width: 350px; 
 }
 
 .landing-main {
@@ -9,6 +13,11 @@ body {
     margin: 100px auto; 
     width: 250px; 
     font-size: 30px; 
+    border: 1px solid #000; 
+    background-color: #000; 
+    border-width: 20px;
+    box-shadow: 25px 25px #fff; 
+    color: #fff; 
 }
 
 .landing-start {
@@ -16,16 +25,79 @@ body {
     width: 250px;
     margin: 0 auto; 
     font-size: 25px; 
+    border: 1px solid #000; 
+    background-color: #000; 
+    border-width: 20px;
+    box-shadow: 25px 25px #fff; 
+    color: #fff; 
 }
 
 .landing-start p {
-    color: #df4811;
+    color: #fff;
 }
 
 .landing-btn {
-    margin-top: 40px; 
+    margin-top: 60px; 
+}
+
+.cbt-enter_button button{
+    width: 150px; 
+    height: 45px; 
+    background-color: #000;
+    border: 1px solid #000; 
+    color: #fff; 
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px; 
+    box-shadow: 10px 10px #fff; 
+}
+
+.cbt-enter_button:hover button {
+    color: #ffdfd3;
+    transition: 0.7s; 
 }
 
 .footer {
     margin-top: 150px; 
+}
+
+@media only screen and (min-width: 500px) {
+    .cb-logo {
+        width: 400px; 
+    }
+
+    .landing-main {
+        width: 350px; 
+    }
+
+    .landing-start {
+        width: 350px; 
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .cb-logo {
+        width: 450px; 
+    }
+
+    .landing-main {
+        width: 450px; 
+    }
+
+    .landing-start {
+        width: 450px; 
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .cb-logo {
+        width: 500px; 
+    }
+
+    .landing-main {
+        width: 550px; 
+    }
+
+    .landing-start {
+        width: 550px; 
+    }
 }

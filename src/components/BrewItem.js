@@ -7,12 +7,9 @@ import '../styles/BrewItem.css';
 class BrewItem extends Component {
     render() {
         //displays only the name & image for individual item on the dashboard 
-        const { image, name, id } = this.props; 
+        const { name, id } = this.props; 
         return(
             <div className='brew-item'>
-                <div className='brew-image'>
-                    <img src={image} />
-                </div>
                 <div>
                   <Link to={`/brew/${id}`}>
                     <p className='gbt-item__brew_name'>

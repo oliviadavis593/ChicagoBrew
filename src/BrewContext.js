@@ -2,7 +2,8 @@ import React from 'react';
 
 const BrewContext = React.createContext({
     brews: [],
-    addBrew: () => {}
+    addBrew: () => {},
+    deleteBrew: () => {}
 })
 
 export default BrewContext; 

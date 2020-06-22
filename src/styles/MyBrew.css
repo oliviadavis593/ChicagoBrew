@@ -1,0 +1,32 @@
+.cbt-mybrew-list {
+   margin-right: 40px; 
+}
+
+.cbt-mybrew-list li {
+    list-style-type: none;
+      text-decoration: none;   
+  }
+
+.cbt-mybrew-list a {
+    text-decoration: none; 
+}
+
+
+.cbt-mybrew-list button {
+    width: 200px; 
+}
+
+.cbt-delete__container button {
+    width: 120px;
+    height: 35px; 
+    font-family: 'Roboto Condensed', sans-serif;
+    border: 4px solid #fff; 
+    background-color: #000; 
+    color: #fff;  
+    font-size: 15px; 
+}
+
+.cbt-delete__container:hover button {
+    color: #ffdfd3;
+    transition: 0.7s;  
+}

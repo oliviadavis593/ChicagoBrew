@@ -15,7 +15,6 @@ class BrewList extends Component {
                           <BrewItem
                           id={brew.id}
                           name={brew.name}
-                          image={brew.image}
                           />
                       </li>
                   ))}

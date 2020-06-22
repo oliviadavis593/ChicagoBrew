@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box; 
+}
+
 .cbt-brew_list {
     text-align: center; 
     display: inline; 
