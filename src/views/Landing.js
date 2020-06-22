@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../views/Footer';
+import Logo from '../img/chicagobrew-logo.png';
 import '../styles/Landing.css';
 
 
 function Landing() {
     return(
         <div>
-            <header>
-                <h1>Logo Here</h1>
+            <header className='header'>
+                <img src={Logo} alt='cb-logo' className='cb-logo' />
             </header>
             <div className='landing-main'>
                 <p>
@@ -25,7 +26,7 @@ function Landing() {
                   <p>4. Visit a brewery and enjoy!</p>  
             </div>
             <div className='landing-btn'>
-               <Link to='/dashboard' className='enter_button'>
+               <Link to='/dashboard' className='cbt-enter_button'>
                     <button>Enter</button>
                </Link>
             </div>
