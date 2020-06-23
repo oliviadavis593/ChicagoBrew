@@ -27,3 +27,10 @@
     color: #ffdfd3; 
     transition: 0.7s; 
 }
+
+@media only screen and (min-width: 720px) {
+  .brew-item {
+      width: 350px; 
+      font-size: 30px; 
+  }  
+}

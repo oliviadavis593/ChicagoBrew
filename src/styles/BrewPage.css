@@ -57,3 +57,17 @@ details {
     color: #ffdfd3;
     transition: 0.7s; 
 }
+
+@media only screen and (min-width: 720px) {
+    .cbt-brew-page__container {
+        width: 400px; 
+    }
+
+    .cbt-brew-info__container {
+        font-size: 20px; 
+    }
+
+    .cbt-brew-page__container header {
+        font-size: 25px; 
+    }
+}
