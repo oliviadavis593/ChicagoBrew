@@ -1,27 +1,39 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import STORE from '../components/store';
+//import STORE from '../components/store';
 import Navigation from '../components/Navigation';
 import BrewContext from '../BrewContext';
+import config from '../config';
 import '../styles/BrewPage.css';
 
 
 class BrewPage extends Component {
 
     handleClick = () => {
+        const brews = this.context.brews; 
         const { brew_id } = this.props.match.params; 
-        const brew = STORE.brews.find(brew => brew.id === parseInt(brew_id, 10));
+        //map through the brews to find a specific brew id 
+        const brew = brews.find(brew => brew.id === parseInt(brew_id, 10));
 
         this.context.addBrew(brew)
         this.props.history.push('/mybrews')
     }
 
+    
     static contextType = BrewContext; 
 
     render() {
         //display info from specific brew 
+        const brews = this.context.brews; 
+        console.log("brews", brews)
+        const { brew_id } = this.props.match.params;
+        console.log("brew_id", brew_id)
+        const brew = brews.find(brew => brew.id.toString() === brew_id.toString() || {})
+        console.log("brew", brew)
+        /*
         const { brew_id } = this.props.match.params; 
         const brew = STORE.brews.find(brew => brew.id === parseInt(brew_id, 10));
+        */
         return(
          <div>
              <div className='navigation'>
@@ -29,7 +41,7 @@ class BrewPage extends Component {
              </div>
              <section className='cbt-brew-page__container'>
              <header>
-               <h1>{brew.name}</h1>
+                <h1>{brew.name}</h1>
              </header>
              <div className='cbt-brew-info__container'>
                  <div className='cbt-brew_image'>

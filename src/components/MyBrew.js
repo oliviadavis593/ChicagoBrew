@@ -32,6 +32,7 @@ class MyBrew extends Component {
     }
 
     render() {
+        //uses context to retrieve the brews located in state in AppRouter 
         const brews = this.context.brews; 
         return(
             <div>

@@ -38,7 +38,7 @@ class AppRouter extends Component {
     }
 
     handleAddBrew = brew => {
-        console.log("brew", brew)
+        console.log("add brew", brew)
         this.setState({
             brews: [...this.state.brews, brew],
         })
@@ -59,7 +59,6 @@ class AppRouter extends Component {
         return(
             <BrewContext.Provider value={contextValue}>
                 <Error>
-                
                     <div className='App'>
                         <div className='Brew__landing'>
                             <Route exact path='/' component={Landing}/>
