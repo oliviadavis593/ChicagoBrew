@@ -13,6 +13,7 @@ class AppRouter extends Component {
 
     state = {
         brews: [],
+        user_brews: [],
         error: null, 
     }
 
@@ -53,6 +54,7 @@ class AppRouter extends Component {
     render() {
         const contextValue = {
             brews: this.state.brews, 
+            userBrews: this.state.user_brews,
             addBrew: this.handleAddBrew,
             deleteBrew: this.handleDeleteBrew
         }

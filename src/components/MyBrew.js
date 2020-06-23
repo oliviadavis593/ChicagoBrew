@@ -33,18 +33,18 @@ class MyBrew extends Component {
 
     render() {
         //uses context to retrieve the brews located in state in AppRouter 
-        const brews = this.context.brews; 
+        const userBrews = this.context.userBrews; 
         return(
             <div>
                 <div className='navigation'>
                     <Navigation />
                 </div>
                 <ul className='cbt-mybrew-list'>
-                    {brews.map(brew => (
+                    {userBrews.map(brew => (
                         <li key={brew.id}>
                             <BrewItem 
-                                id={brew.id}
-                                name={brew.name}
+                                id={userBrews.id}
+                                name={userBrews.name}
                             />
                         <div className='cbt-delete__container'>
                             <button
