@@ -5,6 +5,7 @@ import Dashboard from '../views/Dashboard';
 import BrewPage from '../components/BrewPage';
 import MyBrew from '../components/MyBrew';
 import BrewContext  from '../BrewContext';
+import Error from '../Error';
 import config from '../config';
 
 
@@ -57,20 +58,23 @@ class AppRouter extends Component {
         }
         return(
             <BrewContext.Provider value={contextValue}>
-                <div className='App'>
-                    <div className='Brew__landing'>
-                        <Route exact path='/' component={Landing}/>
-                    </div>
+                <Error>
+                
+                    <div className='App'>
+                        <div className='Brew__landing'>
+                            <Route exact path='/' component={Landing}/>
+                        </div>
 
-                    <main>
+                        <main>
                         <Switch>
-                            <Route path='/dashboard' component={Dashboard} />
-                            {/*Note: change back to /brewpage/:brew_id when implenting backend API */}
-                            <Route path='/brew/:brew_id' component={BrewPage} />
-                            <Route path='/mybrews' component={MyBrew}/>
+                                <Route path='/dashboard' component={Dashboard} />
+                                {/*Note: change back to /brewpage/:brew_id when implenting backend API */}
+                                <Route path='/brew/:brew_id' component={BrewPage} />
+                                <Route path='/mybrews' component={MyBrew}/>
                         </Switch>
-                    </main>
-                </div>
+                        </main>
+                    </div>
+                </Error>
             </BrewContext.Provider>
         )
     }
