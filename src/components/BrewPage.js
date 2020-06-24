@@ -24,7 +24,7 @@ class BrewPage extends Component {
         //display info from specific brew by id 
         const brews = this.context.brews; 
         const { brew_id } = this.props.match.params;
-        const brew = brews.find(brew => brew.id.toString() === brew_id.toString() || {});
+        const brew = brews.find(brew => brew.id.toString() === brew_id.toString()) || {};
         
         //info to populate on the /brew page 
         return(
