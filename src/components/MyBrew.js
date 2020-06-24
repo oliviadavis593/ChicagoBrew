@@ -52,7 +52,7 @@ class MyBrew extends Component {
                             <button
                                 className='cbt-delete'
                                 type='button'
-                                onClick={() => this.handleClickDelete()}
+                                onClick={() => this.handleClickDelete(brew_id)}
                             >   
                                 {' '}
                                 Delete
