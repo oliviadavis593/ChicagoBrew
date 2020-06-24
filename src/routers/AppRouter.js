@@ -13,7 +13,7 @@ class AppRouter extends Component {
 
     state = {
         brews: [],
-        user_brews: [],
+        user_brews: [], //dedicated to /mybrews for specific brews added to the list 
         error: null, 
     }
 
@@ -39,7 +39,6 @@ class AppRouter extends Component {
     }
 
     handleAddBrew = brew => {
-        console.log("add brew", brew)
         this.setState({
             user_brews: [...this.state.user_brews, brew],
         })

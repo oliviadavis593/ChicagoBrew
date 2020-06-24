@@ -9,6 +9,7 @@ class MyBrew extends Component {
 
     static contextType = BrewContext;
     
+    //DELETE a specific brew by id inside /mybrews list 
     handleClickDelete = e => {
         const brew_id = this.props.brew_id
 

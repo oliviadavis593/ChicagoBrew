@@ -9,6 +9,7 @@ class BrewList extends Component {
     static contextType = BrewContext; 
 
     render() {
+        //passed down list of brews from state via context 
         const brews = this.context.brews; 
         return(
             <section className='cbt-brew-list__container'>

@@ -23,17 +23,12 @@ class BrewPage extends Component {
     static contextType = BrewContext; 
 
     render() {
-        //display info from specific brew 
+        //display info from specific brew by id 
         const brews = this.context.brews; 
-        console.log("brews", brews)
         const { brew_id } = this.props.match.params;
-        console.log("brew_id", brew_id)
         const brew = brews.find(brew => brew.id.toString() === brew_id.toString() || {})
-        console.log("brew", brew)
-        /*
-        const { brew_id } = this.props.match.params; 
-        const brew = STORE.brews.find(brew => brew.id === parseInt(brew_id, 10));
-        */
+        
+        //info to populate on the /brew page 
         return(
          <div>
              <div className='navigation'>
