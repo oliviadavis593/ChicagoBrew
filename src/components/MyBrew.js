@@ -40,8 +40,8 @@ class MyBrew extends Component {
                     <Navigation />
                 </div>
                 <ul className='cbt-mybrew-list'>
-                    {userBrews.map(brew => (
-                        <li key={brew.id}>
+                    {userBrews.map(userBrews => (
+                        <li key={userBrews.id}>
                             <BrewItem 
                                 id={userBrews.id}
                                 name={userBrews.name}
