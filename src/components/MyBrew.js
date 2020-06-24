@@ -11,7 +11,8 @@ class MyBrew extends Component {
     
     //DELETE a specific brew by id inside /mybrews list 
     handleClickDelete = e => {
-        const brew_id = this.props.brew_id;
+        const  brew_id  = this.props.brew_id;
+        console.log("brew_id", brew_id)
 
         fetch(`${config.API_ENDPOINT}/api/brews/${brew_id}`, {
             method: 'DELETE',
