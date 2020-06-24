@@ -41,13 +41,13 @@ class AppRouter extends Component {
     handleAddBrew = brew => {
         console.log("add brew", brew)
         this.setState({
-            brews: [...this.state.user_brews, brew],
+            user_brews: [...this.state.user_brews, brew],
         })
     }
 
     handleDeleteBrew = brew => {
         this.setState({
-            brews: [...this.state.user_brews, brew]
+            user_brews: [...this.state.user_brews, brew]
         })
     }
 
