@@ -41,7 +41,7 @@ class AppRouter extends Component {
     handleAddBrew = brew => {
         console.log("add brew", brew)
         this.setState({
-            brews: [...this.state.brews, brew],
+            brews: [...this.state.user_brews, brew],
         })
     }
 
