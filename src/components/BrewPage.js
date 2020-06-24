@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-//import STORE from '../components/store';
 import Navigation from '../components/Navigation';
 import BrewContext from '../BrewContext';
-import config from '../config';
 import '../styles/BrewPage.css';
 
 
