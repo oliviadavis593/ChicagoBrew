@@ -3,7 +3,7 @@
 - [ChicagoBrew](https://chicagobrew.vercel.app/) is a fully responsive, server-side rendered web application that helps people in the Chicago area locate and enjoy the best breweries in town. The Back-End repo can be found [here](https://github.com/oliviadavis593/ChicagoBrew-API)
 
 # Screenshots 📸
-| ![](src/img/cb-landing.png) |
+| ![](../img/cb-landing.png)
 |:---:|
 |Landing|
 
