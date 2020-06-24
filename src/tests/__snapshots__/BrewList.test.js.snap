@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BrewList component renders the UI as expected 1`] = `
+<section
+  className="cbt-brew-list__container"
+>
+  <ul
+    className="cbt-brew_list"
+  />
+  <div
+    className="footer"
+  >
+    <footer
+      className="footer"
+    >
+      <div
+        className="footer__brand-container"
+      >
+        <span
+          role="img"
+        >
+          Made with ❤️ by 
+          <a
+            href="https://oliviadavis593.github.io/portfolio/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Olivia Davis
+          </a>
+        </span>
+      </div>
+      <div
+        className="footer__social-media"
+      >
+        <a
+          className="gb-footer-github"
+          href="https://github.com/oliviadavis593"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <ion-icon
+            class="icons"
+            name="logo-github"
+          />
+        </a>
+        <a
+          className="gb-footer-linkedin"
+          href="https://www.linkedin.com/in/olivia-davis-ab1848105/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <ion-icon
+            class="icons"
+            name="logo-linkedin"
+          />
+        </a>
+      </div>
+      <div
+        className="copyright-text"
+      >
+        <p>
+          Copyright © 2020
+          <br />
+          All Rights Reserved
+        </p>
+      </div>
+    </footer>
+  </div>
+</section>
+`;
