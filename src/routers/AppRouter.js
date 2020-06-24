@@ -47,7 +47,7 @@ class AppRouter extends Component {
 
     handleDeleteBrew = brew => {
         this.setState({
-            brews: [...this.state.brews, brew]
+            brews: [...this.state.user_brews, brew]
         })
     }
 
