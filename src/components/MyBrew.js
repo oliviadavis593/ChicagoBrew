@@ -11,10 +11,9 @@ class MyBrew extends Component {
     
     //DELETE a specific brew by id inside /mybrews list 
     handleClickDelete = e => {
-        const  brew_id  = this.props.brew_id;
-        console.log("brew_id", brew_id)
+       const userBrews = this.context.userBrews;
 
-        fetch(`${config.API_ENDPOINT}/api/brews/${brew_id}`, {
+        fetch(`${config.API_ENDPOINT}/api/brews/${brewId}`, {
             method: 'DELETE',
             headers: {
                 'content-type': 'application/json'
@@ -26,7 +25,7 @@ class MyBrew extends Component {
             }
         })
         .then(() => {
-            this.context.deleteBrew(brew_id)
+            this.context.deleteBrew(brewId)
         })
         .catch(error => {
             console.error({ error })
@@ -52,7 +51,7 @@ class MyBrew extends Component {
                             <button
                                 className='cbt-delete'
                                 type='button'
-                                onClick={() => this.handleClickDelete(brew_id)}
+                                onClick={() => this.handleClickDelete = brewId}
                             >   
                                 {' '}
                                 Delete
