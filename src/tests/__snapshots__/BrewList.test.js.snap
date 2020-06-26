@@ -19,7 +19,14 @@ exports[`BrewList component renders the UI as expected 1`] = `
         <span
           role="img"
         >
-          Made with ❤️ by 
+          Made with 
+          <span
+            aria-label="heart-emoji"
+            role="img"
+          >
+            ❤️
+          </span>
+           by 
           <a
             href="https://oliviadavis593.github.io/portfolio/"
             rel="noopener noreferrer"
@@ -28,32 +35,6 @@ exports[`BrewList component renders the UI as expected 1`] = `
             Olivia Davis
           </a>
         </span>
-      </div>
-      <div
-        className="footer__social-media"
-      >
-        <a
-          className="gb-footer-github"
-          href="https://github.com/oliviadavis593"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <ion-icon
-            class="icons"
-            name="logo-github"
-          />
-        </a>
-        <a
-          className="gb-footer-linkedin"
-          href="https://www.linkedin.com/in/olivia-davis-ab1848105/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <ion-icon
-            class="icons"
-            name="logo-linkedin"
-          />
-        </a>
       </div>
       <div
         className="copyright-text"

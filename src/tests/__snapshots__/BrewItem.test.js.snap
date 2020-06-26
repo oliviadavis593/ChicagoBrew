@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BrewItem component renders the UI as expected 1`] = `
+<div
+  className="brew-item"
+>
+  <div>
+    <a
+      href="/brew/undefined"
+      onClick={[Function]}
+    >
+      <p
+        className="gbt-item__brew_name"
+      >
+        test-name
+      </p>
+    </a>
+  </div>
+</div>
+`;

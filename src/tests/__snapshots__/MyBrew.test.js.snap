@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyBrew Component renders the UI as expected 1`] = `
+<div>
+  <div
+    className="navigation"
+  >
+    <div
+      className="cbt-navigation"
+    >
+      <div
+        className="cbt-logo"
+      >
+        <a
+          aria-current="page"
+          className="active"
+          href="/"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <img
+            alt="cb-logo"
+            className="cb-logo"
+            src="chicagobrew-logo.png"
+          />
+        </a>
+      </div>
+      <nav
+        className="nav"
+      >
+        <a
+          aria-current={null}
+          className="cbt-link__home"
+          href="/dashboard"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+        <a
+          aria-current={null}
+          className="cbt-link__mybrew"
+          href="/mybrews"
+          onClick={[Function]}
+        >
+          My Brew
+        </a>
+      </nav>
+    </div>
+  </div>
+  <ul
+    className="cbt-mybrew-list"
+  />
+</div>
+`;
