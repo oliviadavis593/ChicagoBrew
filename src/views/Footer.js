@@ -10,10 +10,6 @@ function Footer() {
                     Made with <span role='img' aria-label='heart-emoji'>❤️</span> by <a href='https://oliviadavis593.github.io/portfolio/' target='_blank' rel='noopener noreferrer'>Olivia Davis</a>
                 </span>
             </div>
-            <div className='footer__social-media'>
-                <a href='https://github.com/oliviadavis593' className='cb-footer-github' target='_blank' rel="noopener noreferrer"><ion-icon name="logo-github" class="icons"></ion-icon></a>
-                <a href='https://www.linkedin.com/in/olivia-davis-ab1848105/' className='cb-footer-linkedin' target='_blank' rel="noopener noreferrer"><ion-icon name="logo-linkedin" class="icons"></ion-icon></a>
-                </div>
                 <div className='copyright-text'>
                     <p>
                         Copyright &copy; 2020
