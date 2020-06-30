@@ -4,7 +4,8 @@ const BrewContext = React.createContext({
     brews: [],
     userBrews: [],
     addBrew: () => {},
-    deleteBrew: () => {}
+    deleteBrew: () => {},
+    updateBrew: () => {}
 })
 
 export default BrewContext; 

@@ -41,8 +41,8 @@ body {
 }
 
 .cbt-enter_button button{
-    width: 150px; 
-    height: 45px; 
+    width: 200px; 
+    height: 60px; 
     background-color: #000;
     border: 1px solid #000; 
     color: #fff; 
@@ -58,6 +58,16 @@ body {
 
 .footer {
     margin-top: 150px; 
+}
+
+@media only screen and (min-width: 420px) {
+    .landing-main {
+        width: 300px; 
+    }
+
+    .landing-start {
+        width: 300px; 
+    }
 }
 
 @media only screen and (min-width: 500px) {

@@ -26,8 +26,8 @@ function Landing() {
                   <p>4. Visit a brewery and enjoy!</p>  
             </div>
             <div className='landing-btn'>
-               <Link to='/dashboard' className='cbt-enter_button'>
-                    <button>Enter</button>
+               <Link to='/login' className='cbt-enter_button'>
+                    <button>Login/Register</button>
                </Link>
             </div>
             <div className='footer'>

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Landing from '../views/Landing';
+import Login from '../components/Login';
+import Registration from '../components/Registration';
 import Dashboard from '../views/Dashboard';
 import BrewPage from '../components/BrewPage';
 import MyBrew from '../components/MyBrew';
@@ -50,12 +52,24 @@ class AppRouter extends Component {
         })
     }
 
+    handleUpdateBrew = updatedBrew => {
+        const newBrew = this.state.brews.map(i =>
+            (i.id === updatedBrew.id)
+                ? updatedBrew
+                : i    
+        )
+        this.setState({
+            brews: newBrew
+        })
+    }
+
     render() {
         const contextValue = {
             brews: this.state.brews, 
             userBrews: this.state.user_brews,
             addBrew: this.handleAddBrew,
-            deleteBrew: this.handleDeleteBrew
+            deleteBrew: this.handleDeleteBrew,
+            updateItem: this.handleUpdateBrew
         }
         return(
             <BrewContext.Provider value={contextValue}>
@@ -63,6 +77,8 @@ class AppRouter extends Component {
                     <div className='App'>
                         <div className='Brew__landing'>
                             <Route exact path='/' component={Landing}/>
+                            <Route path='/login' component={Login} />
+                            <Route path='/registration' component={Registration} />
                         </div>
 
                         <main>
